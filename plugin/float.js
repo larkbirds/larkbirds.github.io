@@ -24,19 +24,19 @@
 		var height = document.body.scrollHeight;
 		mode.style.height = height + "px";
 
-		var closeBtn = document.createElement("span")
+		var closeBtn = document.createElement("span");
 		closeBtn.className = "modeClose";
 		closeBtn.innerHTML = "X";
 		closeBtn.onclick = function() {
 			mode.style.display = "none";
 			document.body.removeChild(mode);
-		}
+		};
 		closeBtn.onmouseover = function() {
 			this.style.textDecoration = "underline";
-		}
+		};
 		closeBtn.onmouseout = function() {
 			this.style.textDecoration = "none";
-		}
+		};
 		var modeTitle = document.createElement("div");
 		modeTitle.className = "modeTitle";
 		modeTitle.innerHTML = setting.title;
@@ -71,16 +71,16 @@
 			setting.callback.call();
 		}
 		return mode;
-	}
+	};
 
 	$.modeHide = function(mode) {
 		document.body.removeChild(mode);
-	}
+	};
 	$.modeVersion = function() {
 		alert("author : JACK");
-	}
+	};
 	$.modeName = function() {
 		alert("mode");
-	}
+	};
 
 })(jQuery);
