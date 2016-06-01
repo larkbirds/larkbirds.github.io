@@ -1,0 +1,34 @@
+html,body{
+	margin: 0 0;
+}
+.mode{
+	background-color: #757575;
+	position: fixed;
+	z-index: 9999;
+	opacity: 0.5;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+}
+.modeOut{
+	margin-left:auto;
+	margin-right: auto;
+	background-color: #fff;
+}	
+.modeTitle{
+	font-weight: bold;
+	font-size:20px;
+	text-align: center;
+	height: 23px;
+	padding-top: 20px;
+}
+.modeBody{
+	height: 540px;
+	opacity: 1;
+	overflow-y: scroll;
+}
+.modeClose{
+	float:right;
+	margin-right:20px;
+	clear:both;
+}
